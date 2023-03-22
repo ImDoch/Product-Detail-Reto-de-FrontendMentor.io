@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: hsl(30, 38%, 92%);
+   font-family: 'montserrat', serif;
+   padding: 1rem;
+}
+
+.container {
+    margin: 0 1rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 30rem;
+    min-width: 20rem;
+    border-radius: 0.7rem;
+}
+
+.mobile {
+    max-width: 100%;
+    border-radius: 0.7rem 0.7rem 0 0;
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+.container_info {
+    padding: 1.5rem;
+    padding-top: 2rem;
+    background-color: white;
+    border-radius: 0 0 0.7rem 0.7rem;
+}
+
+.container_info h2 {
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.container_info h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: rem;
+    margin-bottom: 1.5rem;
+    color: hsl(212, 21%, 14%);
+}
+
+.container_info p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6rem;
+    margin-bottom: 1.6rem;
+    font-size: 14px;
+}
+
+.info_prices {
+    display: flex;
+    align-items:center;
+    gap: 0.8rem;
+}
+
+.info_prices .new-price {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.info_prices .old-price {
+    text-decoration: line-through;
+}
+
+.container_info button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    gap: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container_info button:hover {
+    background-color: hsl(158, 36%, 21%);
+}
+
+
+.attribution {
+    margin: 1rem auto;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 1024px){
+
+    .desktop {
+        display: block;
+        max-width: 100%;
+        border-radius: 0.7rem 0 0 0.7rem; 
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .container {
+        max-width: 37.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container_info {
+        border-radius: 0 0.7rem  0.7rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 1.188rem;
+    }
+}
